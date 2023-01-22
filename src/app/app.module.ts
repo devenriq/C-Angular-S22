@@ -18,13 +18,17 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ConfirmDialogComponent } from './pages/confirm-dialog/confirm-dialog.component';
+import { FormComponent } from './pages/form/form.component';
+import { RouterLink } from '@angular/router';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     DashboardComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import { ConfirmDialogComponent } from './pages/confirm-dialog/confirm-dialog.co
     MatCardModule,
     MatMenuModule,
     MatFormFieldModule,
-    MatDialogModule
+    MatDialogModule,
+    RouterLink
   ],
   providers: [],
   bootstrap: [AppComponent]
